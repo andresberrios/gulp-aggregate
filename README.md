@@ -12,8 +12,10 @@ It then writes the full batch of files into a new stream
 event on that stream.
 
 This behaviour allows you to use continuous streams (that never
-emit the `end` event) and make them play well with other gulp
-plugins that expect the source stream to end.
+emit the `end` event, like [`gulp-watch`](https://github.com/floatdrop/gulp-watch))
+and make them play well with other gulp plugins that expect the source
+stream to end (like [`gulp-concat`](https://github.com/wearefractal/gulp-concat)
+and [`gulp-inject`](https://github.com/klei/gulp-inject)).
 
 Example:
 
