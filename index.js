@@ -20,7 +20,7 @@
       throw new Error("Invalid callback provided: " + callback);
     }
     if (opts.debounce == null) {
-      opts.debounce = 200;
+      opts.debounce = 50;
     }
     debouncedCallback = null;
     if (opts.debounce === 0) {

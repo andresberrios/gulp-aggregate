@@ -12,7 +12,7 @@ module.exports = (opts, callback) ->
   unless isFunction callback
     throw new Error "Invalid callback provided: #{callback}"
 
-  opts.debounce ?= 200
+  opts.debounce ?= 50
 
   debouncedCallback = null
   if opts.debounce is 0

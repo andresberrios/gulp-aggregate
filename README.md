@@ -25,9 +25,12 @@ aggregate = require('gulp-aggregate');
 concat = require('gulp-concat');
 
 fileStreamWithNoEndEvent = watch({glob: 'watchedScripts/*.js'})
-.pipe(aggregate(function(fileStreamWithEndEvent) {
+.pipe(aggregate({debounce: 10}, function(fileStreamWithEndEvent) {
     return fileStreamWithEndEvent
     .pipe(concat('concatenated.js'))
     .pipe(gulp.dest('public/scripts'));
 }))
 ```
+
+The default `debounce` time is 50ms. After `debounce` milliseconds without
+receiving data, the `callback` function will get called with the new aggregated stream.

@@ -15,7 +15,9 @@
   }, function(files) {
     return files.pipe(es.mapSync(function(file) {
       return gutil.log(gutil.colors.magenta(file.path));
-    }));
+    })).on('end', function() {
+      return gutil.log(gutil.colors.magenta('End event called'));
+    });
   })).pipe(es.mapSync(function(file) {
     return gutil.log(file.path);
   }));
