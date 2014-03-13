@@ -3,10 +3,13 @@ gulp-aggregate
 
 Gulp plugin that acts like a buffer, but a bit differently:
 
+gulp-aggregate is a Through stream with a twist.
 Every time the stream receives a file, it will keep it in an
-in-memory buffer along with the files received in the past.
-It then writes the full batch of files into a new stream and
-emit `end` on that stream.
+in-memory buffer along with the files received in the past,
+keeping one copy per file path.
+It then writes the full batch of files into a new stream
+(which is passed to a callback function) and emits the `end`
+event on that stream.
 
 This behaviour allows you to use continuous streams (that never
 emit the `end` event) and make them play well with other gulp

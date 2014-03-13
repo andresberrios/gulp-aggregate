@@ -1,0 +1,39 @@
+{
+  "name": "gulp-aggregate",
+  "version": "0.1.0",
+  "description": "Keep track of received files and send them as a batch all together.",
+  "main": "index.js",
+  "dependencies": {
+    "event-stream": "^3.1.0",
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "gulp": "^3.5.5",
+    "gulp-util": "^2.2.14"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andresberrios/gulp-aggregate.git"
+  },
+  "keywords": [
+    "gulp",
+    "gulpfriendly",
+    "watch",
+    "batch",
+    "accumulate",
+    "throttle",
+    "debounce",
+    "aggregate",
+    "end"
+  ],
+  "author": "Andres Berrios <andres.berrios.j@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andresberrios/gulp-aggregate/issues"
+  },
+  "homepage": "https://github.com/andresberrios/gulp-aggregate"
+}
