@@ -21,7 +21,7 @@
   },
   "keywords": [
     "gulp",
-    "gulpfriendly",
+    "gulpplugin",
     "watch",
     "batch",
     "accumulate",
