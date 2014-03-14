@@ -1,6 +1,6 @@
 {
   "name": "gulp-aggregate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Keep track of received files and send them as a batch all together.",
   "main": "index.js",
   "dependencies": {
